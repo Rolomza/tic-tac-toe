@@ -1,3 +1,38 @@
 body {
-    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #202D5D;
+    color:#FAF9F9;
+}
+
+.wrapper {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8898B0;
+}
+
+.cells-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+    height: 500px;
+    width: 500px;
+    background-color: #000;
+}
+
+.cell {
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    background-color: #636D94;
+    font-size: 50px;
 }
