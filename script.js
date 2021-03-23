@@ -1,21 +1,22 @@
-const Player = (nickname) => {
-    let totalScore = 0;
-    return {
-        nickname,
-        totalScore
+const Player = (sign) => {
+    this.sign = sign;
+
+    const getSign = () => {
+        return sign
     };
-};
 
-
-
-
-const gameboard = () => {
-    let gameBoardArr = [
-        ['X','O','X'],
-        ['O','X','O'],
-        ['O','O','X']
-        ]
-    return gameBoardArr
+    return { getSign };
 }
 
-console.log(gameboard.gameBoardArr)
+
+const gameboard = (() => {
+
+})();
+
+const displayController = (() => {
+
+})();
+
+const gameController = (() => {
+
+})();
