@@ -15,29 +15,43 @@ header {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #8898B0;
+}
+
+.message {
+    
 }
 
 .cells-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px 10px;
-    height: 500px;
-    width: 500px;
+    height: 454px;
+    width: 454px;
     background-color: #000;
 }
 
 .cell {
+    width: 150px;
+    height: 150px;
+    background-color: #636D94;
+    font-size: 10rem;
+    border: 1px solid black;
     display: flex;
     align-self: stretch;
     justify-content: center;
     align-items: center;
-    background-color: #636D94;
-    font-size: 50px;
+    cursor: pointer;
 }
 
 .cell:hover {
     background-color: #8592c5;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 15px;
+    border: 2px solid black;
+    font-size: 1rem;
 }
